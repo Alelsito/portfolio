@@ -1,0 +1,19 @@
+
+// Styles
+@import './styles';
+
+%initial-settings {
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+body {
+    @extend %initial-settings;
+    background-color: $Black;
+}
+
+#root {
+    @extend %initial-settings;
+}

@@ -1,0 +1,77 @@
+// Styles
+@import '@/styles/styles';
+
+.nav-section {
+    max-width: 100%;
+    min-height: 200px;
+    @extend %display-flex-align-items-center-justify-content-center;
+
+}
+
+.nav {
+    min-width: 95%;
+    min-height: 150px;
+    position: sticky;
+    border: 3px solid white;
+    @extend %display-flex-align-items-center-justify-content-center;
+
+    &__rectangule {
+        min-width: 97.5%;
+        min-height: 110px;
+        background-color: white;
+        @extend %display-flex;
+        justify-content: space-between;
+
+        &__logo {
+            min-width: 10%;
+            min-height: 110px;
+            @extend %display-flex-align-items-center;
+
+            &__image {
+                margin-left: 20px;
+            }
+        }
+
+        &__links {
+            min-width: 60%;
+            min-height: 110px;
+            @extend %display-flex-align-items-center-justify-content-center;
+
+            &__container {
+                min-width: 75%;
+                min-height: 35px;
+                border-bottom: 4px solid $Black;
+                @extend %display-flex-align-items-center;
+                justify-content: space-around;
+
+                &__text {
+                    margin: 0;
+                    font-family: $ChauPilomene;
+                    font-size: 20px;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+        
+        &__social {
+            min-width: 13%;
+            min-height: 110px;
+            @extend %display-flex-align-items-center-justify-content-center;
+
+            &__container {
+                min-width: 160px;
+                min-height: 60px;
+                @extend %display-flex-align-items-center-justify-content-center;
+                gap: 20px;
+
+                .fa-linkedin {
+                    font-size: 30px;
+                }
+
+                .fa-github {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

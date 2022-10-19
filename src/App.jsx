@@ -1,7 +1,9 @@
 
+import NavBar from './layouts/NavBar'
+
 function App () {
   return (
-    <div className='App' />
+    <NavBar />
   )
 }
 

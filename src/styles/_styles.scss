@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap');
+$ChauPilomene: 'Chau Philomene One', sans-serif;
+
+// Colors
+$Black: #000000;
+
+// Display-Flex
+%display-flex {
+    display: flex;
+}
+
+%display-flex-justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+%display-flex-align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+%display-flex-align-items-center-justify-content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%display-flex-flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
