@@ -24,8 +24,12 @@ const NavBar = () => {
           </div>
           <div className='nav__rectangule__social'>
             <div className='nav__rectangule__social__container'>
-              <i className='fa-brands fa-linkedin' />
-              <i className='fa-brands fa-github' />
+              <a href='https://www.linkedin.com/in/hugolopezblanco/' target='_blank' rel='noreferrer'>
+                <i className='fa-brands fa-linkedin' />
+              </a>
+              <a href='https://github.com/Alelsito' target='_blank' rel='noreferrer'>
+                <i className='fa-brands fa-github' />
+              </a>
             </div>
           </div>
         </div>

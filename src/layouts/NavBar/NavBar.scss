@@ -50,6 +50,12 @@
                     font-size: 20px;
                     letter-spacing: 1.2px;
                 }
+
+                &__text:hover {
+                    transition: transform 1s;
+                    transform: scale(1.2);
+                    color: #29496c;
+                }
             }
         }
         
@@ -63,6 +69,20 @@
                 min-height: 60px;
                 @extend %display-flex-align-items-center-justify-content-center;
                 gap: 20px;
+
+                a:link {
+                    color: $Black;
+                    transition: transform 0.4s;
+                }
+
+                a:visited {
+                    color: $Black;
+                }
+                
+                a:hover {
+                    transform: scale(1.2);
+                    color: #29496c;
+                }
 
                 .fa-linkedin {
                     font-size: 30px;
