@@ -2,8 +2,12 @@
 @import '@/styles/styles';
 
 .nav-section {
+    min-width: 100%;
     max-width: 100%;
     min-height: 200px;
+    background-color: $Black;
+    position: fixed;
+    z-index: 1;
     @extend %display-flex-align-items-center-justify-content-center;
 
 }
@@ -11,7 +15,6 @@
 .nav {
     min-width: 95%;
     min-height: 150px;
-    position: sticky;
     border: 3px solid white;
     @extend %display-flex-align-items-center-justify-content-center;
 
@@ -24,11 +27,17 @@
 
         &__logo {
             min-width: 10%;
+            max-width: 15%;
             min-height: 110px;
             @extend %display-flex-align-items-center;
 
             &__image {
                 margin-left: 20px;
+                transition: all 1s;
+            }
+
+            &__image:hover {
+                transform: scale(1.1) rotate(-20deg);
             }
         }
 
@@ -44,15 +53,27 @@
                 @extend %display-flex-align-items-center;
                 justify-content: space-around;
 
+                a:link {
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: $Black;
+                }
+
+                a:active {
+                    color: #29496c;
+                }
+
                 &__text {
                     margin: 0;
                     font-family: $ChauPilomene;
                     font-size: 20px;
                     letter-spacing: 1.2px;
+                    transition: transform 0.4s;
                 }
 
                 &__text:hover {
-                    transition: transform 1s;
                     transform: scale(1.2);
                     color: #29496c;
                 }
@@ -60,7 +81,8 @@
         }
         
         &__social {
-            min-width: 13%;
+            min-width: 10%;
+            max-width: 15%;
             min-height: 110px;
             @extend %display-flex-align-items-center-justify-content-center;
 

@@ -1,0 +1,127 @@
+// Styles
+@import '@/styles/styles';
+
+.home {
+    max-width: 100%;
+    padding-top: 210px;
+    @extend %display-flex-align-items-center-justify-content-center;
+
+    &__left {
+        max-width: 20%;
+        @extend %display-flex-align-items-center-justify-content-center;
+
+        img {
+            max-height: 550px;
+            transition: all 1s;
+        }
+
+        img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+    }
+
+    &__center {
+        min-width: 50%;
+        @extend %display-flex-flex-direction-column;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
+            min-width: 20%;
+            @extend %display-flex-align-items-center-justify-content-center;
+            border-style: dotted none dotted none;
+            border-color: white;
+            padding: 12px 0 12px 0;
+            margin-bottom: 20px;
+
+            p {
+                margin: 0;
+                font-family: $VastShadow;
+                font-size: 20px;
+                color: white;
+            }
+        }
+
+        &__name {
+            min-width: 100%;
+            @extend %display-flex-align-items-center-justify-content-center;
+            flex-direction: column;
+            margin-bottom: 30px;
+            
+            p {
+                margin: 0;
+                font-family: $VastShadow;
+                font-size: 120px;
+                color: white;
+            }
+        }
+
+        &__profile {
+            min-width: 100%;
+            @extend %display-flex-align-items-center-justify-content-center;
+            margin-bottom: 30px;
+
+            p {
+                margin: 0;
+                font-family: $Amaranth;
+                font-size: 35px;
+                color: white;
+                letter-spacing: 7px;
+            }
+        }
+
+        &__cv {
+            min-width: 100%;
+            @extend %display-flex-align-items-center-justify-content-center;
+
+            a {
+                text-decoration: none;
+            }
+
+            &__download {
+                @extend %display-flex-align-items-center;
+                gap: 10px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 25px;
+                transition: transform 0.5s;
+
+                i {
+                    font-size: 25px;
+                }
+
+                p {
+                    margin: 0;
+                    font-family: $ChauPilomene;
+                    font-size: 22px;
+                    color: $Black;
+                    letter-spacing: 1.2px;
+                }
+            }
+
+            &__download:hover {
+                transform: scale(1.1)
+            }
+        }
+
+    }
+
+    &__right {
+        @extend %display-flex-align-items-center-justify-content-center;
+        margin-left: 1%;
+
+        img {
+            max-height: 550px;
+            transition: all 1s;
+        }
+
+        img:hover {
+            transform: rotate(-10deg) scale(1.1);
+        }
+
+    }
+}
+
+.prueba {
+    min-width: 100%;
+    min-height: 1000px;
+}

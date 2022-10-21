@@ -16,7 +16,9 @@ const NavBar = () => {
           </div>
           <div className='nav__rectangule__links'>
             <div className='nav__rectangule__links__container'>
-              <p className='nav__rectangule__links__container__text'> HOME </p>
+              <a href='#home'>
+                <p className='nav__rectangule__links__container__text'> HOME </p>
+              </a>
               <p className='nav__rectangule__links__container__text'> PORTFOLIO </p>
               <p className='nav__rectangule__links__container__text'> SKILLSET </p>
               <p className='nav__rectangule__links__container__text'> ABOUT | CONTACT </p>
