@@ -24,7 +24,7 @@ const Home = () => {
           <p> FRONTEND DEVELOPER </p>
         </div>
         <div className='home__center__cv'>
-          <a href='/public/cv-english.pdf' target='_blank'>
+          <a href='/cv-english.pdf' target='_blank'>
             <button className='home__center__cv__download'>
               <i class='fa-solid fa-cloud-arrow-down' />
               <p> DOWNLOAD MY CV </p>

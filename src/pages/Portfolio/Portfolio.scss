@@ -1,0 +1,152 @@
+// Styles
+@import '@/styles/styles';
+
+.portfolio {
+    margin-top: 90px;
+    min-width: 100%;
+    min-height: 750px;
+    @extend %display-flex-flex-direction-column;
+    align-items: center;
+
+    &__title {
+        min-width: 20%;
+        @extend %display-flex-align-items-center-justify-content-center;
+        border-style: dotted none dotted none;
+        border-color: white;
+        padding: 12px 0 12px 0;
+        margin-bottom: 20px;
+
+        p {
+            margin: 0;
+            font-family: $VastShadow;
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    &__container {
+        max-width: 95%;
+        @extend %display-flex-justify-content-center;
+        flex-wrap: wrap;
+        gap: 20px 2%;
+
+        &__project {
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            padding: 9px 0px 6px 0px;
+            border-radius: 5px;
+
+            &__line {
+                position: absolute;
+                min-width: 100%;
+                min-height: 2px;
+                top: 4px;
+                background-color: $Black;
+
+                &--bottom {
+                    position: absolute;
+                    min-width: 100%;
+                    min-height: 2px;
+                    bottom: 4px;
+                    background-color: $Black;
+                }
+            }
+
+            &__vhs {
+                max-width: 450px;
+            }
+
+            &__info {
+                position: absolute;
+                top: 91px;
+                left: 140px;
+                min-width: 171px;
+                min-height: 97px;
+                background-color: white;
+                border-radius: 5px;
+                @extend %display-flex-align-items-center-justify-content-center;
+                gap: 5px;
+                transition: all 1s;
+                overflow: hidden;
+
+                &__text {
+                    position: absolute;
+                    z-index: 2;
+                    margin: 0;
+                    font-family: $ChauPilomene;
+                    font-size: 18px;
+                    text-align: center;
+                    color: $Black;
+                    letter-spacing: 2px;
+                    transition: all 1s;
+                }
+
+                &__image-container {
+                    position: absolute;
+                    z-index: 1;
+                    min-width: 350px;
+                    max-height: 140px;
+                    overflow: hidden;
+                    visibility: hidden;
+                    transition: all 0.5s;
+                    opacity: 0;
+
+                    &__image {
+                        max-width: 350px;
+                    }
+                }
+
+                &__buttons {
+                    position: absolute;
+                    z-index: 0;
+                    max-width: 100%;
+                    margin-top: 10px;
+                    @extend %display-flex-align-items-center-justify-content-center;
+                    gap: 10px;
+                    visibility: hidden;
+                    transition: all 1s;
+                    opacity: 0;
+
+                    a:link {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    &__live-site {
+                        all: unset;
+                        min-width: 160px;
+                        min-height: 30px;
+                        background-color: #232528;
+                        text-align: center;
+                        font-family: $ChauPilomene;
+                        font-size: 14px;
+                        border-radius: 5px;
+                    }
+
+                    &__repository {
+                        all: unset;
+                        min-width: 160px;
+                        min-height: 30px;
+                        background-color: #949496;
+                        text-align: center;
+                        font-family: $ChauPilomene;
+                        font-size: 14px;
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+
+            &__info:hover {
+                position: absolute;
+                top: 11px;
+                left: 50px;
+                min-width: 350px;
+                min-height: 230px;
+                background-color: white;
+                border-radius: 5px;
+                @extend %display-flex-flex-direction-column;
+            }
+        }
+    }
+}
