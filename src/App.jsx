@@ -7,6 +7,7 @@ import Footer from './layouts/Footer'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Skillset from './pages/Skillset'
+import AboutContact from './pages/AboutContact/AboutContact'
 
 function App () {
   return (
@@ -15,6 +16,7 @@ function App () {
       <Home />
       <Portfolio />
       <Skillset />
+      <AboutContact />
       <Footer />
     </>
   )

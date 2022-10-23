@@ -12,7 +12,9 @@ const NavBar = () => {
       <nav className='nav'>
         <div className='nav__rectangule'>
           <div className='nav__rectangule__logo'>
-            <img src={navBarIcon} alt='navBarIcon' className='nav__rectangule__logo__image' style={{ width: 130 }} />
+            <a href='#home'>
+              <img src={navBarIcon} alt='navBarIcon' className='nav__rectangule__logo__image' style={{ width: 130 }} />
+            </a>
           </div>
           <div className='nav__rectangule__links'>
             <div className='nav__rectangule__links__container'>
@@ -25,7 +27,9 @@ const NavBar = () => {
               <a href='#skillset'>
                 <p className='nav__rectangule__links__container__text'> SKILLSET </p>
               </a>
-              <p className='nav__rectangule__links__container__text'> ABOUT | CONTACT </p>
+              <a href='#aboutContact'>
+                <p className='nav__rectangule__links__container__text'> ABOUT | CONTACT </p>
+              </a>
             </div>
           </div>
           <div className='nav__rectangule__social'>
