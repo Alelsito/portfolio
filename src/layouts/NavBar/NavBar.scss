@@ -8,7 +8,7 @@
     padding-top: 25px;
     background-color: $Black;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     @extend %display-flex-align-items-center-justify-content-center;
 
 }

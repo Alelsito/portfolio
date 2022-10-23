@@ -2,11 +2,10 @@
 @import '@/styles/styles';
 
 .portfolio {
-    margin-top: 90px;
     min-width: 100%;
-    min-height: 750px;
     @extend %display-flex-flex-direction-column;
     align-items: center;
+    margin-top: 140px;
 
     &__title {
         min-width: 20%;
@@ -14,7 +13,7 @@
         border-style: dotted none dotted none;
         border-color: white;
         padding: 12px 0 12px 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         p {
             margin: 0;
