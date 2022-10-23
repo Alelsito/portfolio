@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Layouts
+import Footer from '@/layouts/Footer/Footer'
+
 // Components
 import Html from '@/components/Html'
 import Css from '@/components/Css'
@@ -14,20 +17,23 @@ import './Skillset.scss'
 
 const Skillset = () => {
   return (
-    <section className='skillset' id='skillset'>
-      <div className='skillset__title'>
-        <p> SKILLSET </p>
-      </div>
-      <div className='skillset__container'>
-        <Html />
-        <Css />
-        <Sass />
-        <Bem />
-        <JavaScript />
-        <ReactJs />
-        <Bootstrap />
-      </div>
-    </section>
+    <>
+      <section className='skillset' id='skillset'>
+        <div className='skillset__title'>
+          <p> SKILLSET </p>
+        </div>
+        <div className='skillset__container'>
+          <Html />
+          <Css />
+          <Sass />
+          <Bem />
+          <JavaScript />
+          <ReactJs />
+          <Bootstrap />
+        </div>
+      </section>
+      <Footer />
+    </>
   )
 }
 

@@ -3,9 +3,10 @@
 
 .aboutContact {
     min-width: 100%;
-    min-height: 700px;
     @extend %display-flex-flex-direction-column;
     align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
 
     &__title {
         min-width: 20%;

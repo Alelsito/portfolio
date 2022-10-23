@@ -2,9 +2,6 @@
 @import '@/styles/styles';
 
 .footer {
-    position: fixed;
-    z-index: 3;
-    bottom: 0;
     width: 100%;
     height: auto;
     background-color: white;
@@ -12,8 +9,8 @@
     overflow: hidden;
 
     img {
-        max-height: 100px;
-        margin-right: -0.3px;
+        max-height: 90px;
+        margin-right: -0.7px;
         animation: slide 10s linear infinite;
     }
 }

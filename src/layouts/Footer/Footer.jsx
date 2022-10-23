@@ -16,6 +16,7 @@ const Footer = () => {
       <img src={footerCinta} alt='footerCinta' />
       <img src={footerCinta} alt='footerCinta' />
       <img src={footerCinta} alt='footerCinta' />
+      <img src={footerCinta} alt='footerCinta' />
     </section>
   )
 }

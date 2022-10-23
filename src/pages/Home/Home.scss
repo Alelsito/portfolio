@@ -5,6 +5,7 @@
     max-width: 100%;
     padding-top: 210px;
     @extend %display-flex-align-items-center-justify-content-center;
+    margin-bottom: 60px;
 
     &__left {
         max-width: 20%;

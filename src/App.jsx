@@ -1,7 +1,6 @@
 
 // Layouts
 import NavBar from './layouts/NavBar'
-import Footer from './layouts/Footer'
 
 // Pages
 import Home from './pages/Home'
@@ -17,7 +16,6 @@ function App () {
       <Portfolio />
       <Skillset />
       <AboutContact />
-      <Footer />
     </>
   )
 }
