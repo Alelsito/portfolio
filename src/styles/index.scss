@@ -9,9 +9,26 @@
     min-height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @extend %initial-settings;
     background-color: $Black;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #3d434d6e;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #363d49;
+    border-radius: 20px;
 }
 
 #root {
