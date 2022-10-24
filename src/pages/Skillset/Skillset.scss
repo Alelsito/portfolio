@@ -1,17 +1,10 @@
 // Styles
 @import '@/styles/styles';
 
-.linkAboutContact {
-    position: relative;
-    min-width: 30px;
-    min-height: 10px;
-    bottom: 3rem;
-}
-
 .skillset {
     min-width: 100%;
-    margin-top: 70px;
-    margin-bottom: 75px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     @extend %display-flex-flex-direction-column;
     align-items: center;
 
@@ -31,11 +24,49 @@
         }
     }
 
+    @media screen and (max-width: 570px) {
+        &__title {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        &__title {
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        &__title {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__title {
+            p {
+                font-size: 1.35rem;
+            }
+        }
+    }
+
     &__container {
         max-width: 80%;
         @extend %display-flex-align-items-center-justify-content-center;
         flex-wrap: wrap;
         gap: 30px 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+        &__container {
+            gap: 15px 34px;
+        }
     }
 
     &__card {
@@ -77,4 +108,51 @@
         }
     }
 
+    @media screen and (max-width: 425px) {
+        &__card {
+            min-width: 240px;
+            min-height: 150px;
+    
+            &__top {
+                min-height: 100px;
+                min-width: 100%;
+    
+                img {
+                    max-width: 80px;
+                }
+
+            }
+    
+            &__bottom {
+                min-height: 30px;
+    
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+}
+
+.linkAboutContact {
+    position: relative;
+    min-width: 30px;
+    min-height: 10px;
+    bottom: 3rem;
+}
+
+// Media Queries
+
+@media screen and (max-width: 1024px) {
+    .skillset {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .skillset {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
 }

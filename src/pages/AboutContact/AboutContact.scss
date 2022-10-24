@@ -5,8 +5,8 @@
     min-width: 100%;
     @extend %display-flex-flex-direction-column;
     align-items: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 5.5rem;
+    margin-bottom: 7rem;
     font-size: 1em;
 
     &__title {
@@ -22,6 +22,38 @@
             font-family: $VastShadow;
             font-size: 2rem;
             color: white;
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        &__title {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        &__title {
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        &__title {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__title {
+            p {
+                font-size: 1.35rem;
+            }
         }
     }
 
@@ -159,26 +191,57 @@
 
 @media screen and (max-width: 768px) {
     .aboutContact {
+        font-size: 0.9em !important;
 
         &__container {
-            max-width: 95%;
+            max-width: 90%;
         }
 
         &__left {
-            img {
-                max-width: 215px;
-            }
+            display: none;
         }
 
         &__right {
             min-height: 420px;
             max-width: 100%;
+            margin-left: 0;
+            border-radius: 10px;
+            padding: 10px 0;
 
             &__about {
                 span {
-                    font-size: 1.6rem;
+                    font-size: 0.9em;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutContact {
+        font-size: 0.75em !important;
+
+        p {
+            line-height: 22px;
+        }
+
+        &__right {
+            min-height: 380px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .aboutContact {
+        font-size: 0.6em !important;
+
+        p {
+            line-height: 18px;
+        }
+
+        &__right {
+            min-height: 320px;
         }
     }
 }

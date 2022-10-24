@@ -34,13 +34,6 @@
                 transition: all 1s;
             }
 
-            @media screen and (max-width: 425px) {
-                &__image {
-                    max-width: 100px;
-                    margin-left: 0;
-                }
-            }
-
             &__image:hover {
                 transform: scale(1.1) rotate(-20deg);
             }
@@ -58,11 +51,8 @@
                 @extend %display-flex-align-items-center-justify-content-center;
                 gap: 7%;
 
-                a:link {
+                a {
                     text-decoration: none;
-                }
-
-                a:visited {
                     color: $Black;
                 }
 
@@ -98,6 +88,12 @@
 
                         .fa-bars:hover {
                             transform: scale(1.2);
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            .fa-bars {
+                                font-size: 2.85rem;
+                            }
                         }
 
                         &__section {
@@ -198,13 +194,10 @@
                 @extend %display-flex-align-items-center-justify-content-center;
                 gap: 35%;
 
-                a:link {
+                a {
+                    text-decoration: none;
                     color: $Black;
-                    transition: transform 0.4s;
-                }
-
-                a:visited {
-                    color: $Black;
+                    transition: all 0.4s;
                 }
                 
                 a:hover {
@@ -213,11 +206,11 @@
                 }
 
                 .fa-linkedin {
-                    font-size: 30px;
+                    font-size: 3rem;
                 }
 
                 .fa-github {
-                    font-size: 30px;
+                    font-size: 3rem;
                 }
             }
         }
@@ -227,7 +220,6 @@
                 display: none;
             }
         }
-
     }
 }
 
@@ -242,7 +234,6 @@
             min-height: 80px;
 
             &__logo {
-
                 &__image {
                     max-width: 105px;
                 }
@@ -253,18 +244,18 @@
 
 @media screen and (max-width: 425px) {
     .nav {
-        min-height: 110px;
+        min-height: 90px;
         
         &__rectangule {
             min-width: 94%;
-            min-height: 80px;
+            min-height: 67px;
             justify-content: space-between;
 
             &__logo {
-                margin-left: 2%;
+                margin-left: 0%;
 
                 &__image {
-                    max-width: 105px;
+                    max-width: 80px;
                 }
             }
 

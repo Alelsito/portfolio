@@ -12,9 +12,9 @@
 
 .home {
     min-width: 100%;
-    padding-top: 210px;
     @extend %display-flex-align-items-center-justify-content-center;
     margin-bottom: 50px;
+    padding-top: 210px;
 
     &__left {
         max-width: 20%;
@@ -45,7 +45,7 @@
             border-style: dotted none dotted none;
             border-color: white;
             padding: 12px 0 12px 0;
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
 
             p {
                 margin: 0;
@@ -55,17 +55,95 @@
             }
         }
 
+        @media screen and (max-width: 1024px) {
+            &__title {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            &__title {
+                min-width: 17%;
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            &__title {
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            &__title {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            &__title {
+                p {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+
         &__name {
             min-width: 100%;
             @extend %display-flex-align-items-center-justify-content-center;
             flex-direction: column;
-            margin-bottom: 30px;
+            margin-bottom: 3rem;
             
             p {
                 margin: 0;
                 font-family: $VastShadow;
                 font-size: 12rem;
                 color: white;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            &__name {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            &__name {
+                p {
+                    font-size: 10rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            &__name {
+                p {
+                    font-size: 9rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            &__name {
+                p {
+                    font-size: 7rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            &__name {
+                p {
+                    font-size: 6rem;
+                }
             }
         }
 
@@ -80,6 +158,38 @@
                 font-size: 3.5rem;
                 color: white;
                 letter-spacing: 7px;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            &__profile {
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            &__profile {
+                p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            &__profile {
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            &__profile {
+                p {
+                    font-size: 1.55rem;
+                }
             }
         }
 
@@ -109,6 +219,53 @@
                     color: $Black;
                     letter-spacing: 1.2px;
                 }
+
+                @media screen and (max-width: 768px) {
+                    p {
+                        font-size: 2.1rem;
+                    }
+                }
+
+                @media screen and (max-width: 570px) {
+                    i {
+                        font-size: 2.4rem;
+                    }
+
+                    p {
+                        font-size: 1.9rem;
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    i {
+                        font-size: 2.2rem;
+                    }
+
+                    p {
+                        font-size: 1.7rem;
+                    }
+                }
+
+                @media screen and (max-width: 425px) {
+                    i {
+                        font-size: 1.9rem;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @media screen and (max-width: 320px) {
+                    i {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+
             }
 
             &__download:hover {
@@ -136,11 +293,6 @@
     }
 }
 
-.prueba {
-    min-width: 100%;
-    min-height: 1000px;
-}
-
 .linkPortfolio {
     position: relative;
     min-height: 10px;
@@ -159,5 +311,24 @@
 @media screen and (max-width: 1024px) {
     .linkPortfolio {
         bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding-top: 170px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home {
+        padding-top: 145px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home {
+        padding-top: 140px;
+        margin-bottom: 40px;
     }
 }
