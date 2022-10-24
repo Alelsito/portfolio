@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className='nav__rectangule'>
           <div className='nav__rectangule__logo'>
             <a href='#home'>
-              <img src={navBarIcon} alt='navBarIcon' className='nav__rectangule__logo__image' style={{ width: 130 }} />
+              <img src={navBarIcon} alt='navBarIcon' className='nav__rectangule__logo__image' />
             </a>
           </div>
           <div className='nav__rectangule__links'>

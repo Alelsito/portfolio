@@ -18,7 +18,7 @@ import './Skillset.scss'
 const Skillset = () => {
   return (
     <>
-      <section className='skillset' id='skillset'>
+      <section className='skillset'>
         <div className='skillset__title'>
           <p> SKILLSET </p>
         </div>
@@ -32,6 +32,7 @@ const Skillset = () => {
           <Bootstrap />
         </div>
       </section>
+      <div className='linkAboutContact' id='aboutContact' />
       <Footer />
     </>
   )

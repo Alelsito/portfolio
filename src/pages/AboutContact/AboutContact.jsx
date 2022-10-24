@@ -12,7 +12,7 @@ import selfie from '@/assets/Selfie/hugo.jpeg'
 const AboutContact = () => {
   return (
     <>
-      <section className='aboutContact' id='aboutContact'>
+      <section className='aboutContact'>
         <div className='aboutContact__title'>
           <p> ABOUT | CONTACT </p>
         </div>

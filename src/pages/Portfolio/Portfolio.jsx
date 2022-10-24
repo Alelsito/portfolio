@@ -15,7 +15,7 @@ import NasaApod from '@/components/NasaApod'
 const Portfolio = () => {
   return (
     <>
-      <section className='portfolio' id='portfolio'>
+      <section className='portfolio'>
         <div className='portfolio__title'>
           <p> PORTFOLIO </p>
         </div>
@@ -28,6 +28,7 @@ const Portfolio = () => {
           <NasaApod />
         </div>
       </section>
+      <div className='linkSkillset' id='skillset' />
       <Footer />
     </>
   )

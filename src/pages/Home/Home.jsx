@@ -40,6 +40,7 @@ const Home = () => {
           <img src={cinta} alt='cinta' />
         </section>
       </section>
+      <div className='linkPortfolio' id='portfolio' />
       <Footer />
     </>
   )
