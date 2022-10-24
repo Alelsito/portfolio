@@ -68,6 +68,14 @@ const NavBar = () => {
                   <a href='#aboutContact'>
                     <p className='nav__rectangule__links__container--mobile__section__text__p' onClick={handleOnClickDisplayMenuFalse}> ABOUT | CONTACT </p>
                   </a>
+                  <div className='nav__rectangule__links__container--mobile__section__text__social'>
+                    <a href='https://www.linkedin.com/in/hugolopezblanco/' target='_blank' rel='noreferrer'>
+                      <i className='fa-brands fa-linkedin' />
+                    </a>
+                    <a href='https://github.com/Alelsito' target='_blank' rel='noreferrer'>
+                      <i className='fa-brands fa-github' />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
