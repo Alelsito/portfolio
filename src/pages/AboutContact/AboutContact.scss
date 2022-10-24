@@ -95,6 +95,22 @@
         }
 
         &__mailto {
+
+            button {
+                all: unset;
+                padding: 5px 15px;
+                border-radius: 5px;
+                background: rgba(136, 134, 134, 0.25);
+                box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+                backdrop-filter: blur(4.5px);
+                border-radius: 10px;
+                transition: all 0.7s;
+            }
+
+            button:hover {
+                transform: scale(1.1);
+            }
+
             a {
                 text-decoration: none;
             }
@@ -102,17 +118,12 @@
             p {
                 margin: 0;
                 font-family: $Inter;
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: 600;
                 letter-spacing: 1.2px;
                 line-height: 25px;
                 color: white;
                 text-align: center;
-                transition: all 0.7s;
-            }
-
-            p:hover {
-                transform: scale(1.1);
             }
 
         }

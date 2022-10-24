@@ -40,7 +40,9 @@ const AboutContact = () => {
             </div>
             <div className='aboutContact__right__mailto'>
               <a href='mailto:hugoalejandrolopezblanco@gmail.com'>
-                <p> Contact me </p>
+                <button>
+                  <p> Contact me </p>
+                </button>
               </a>
             </div>
           </div>
