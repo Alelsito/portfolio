@@ -26,13 +26,19 @@
 
         &__logo {
             min-width: 10%;
-            min-height: 110px;
             @extend %display-flex-align-items-center;
 
             &__image {
                 max-width: 115px;
                 margin-left: 10%;
                 transition: all 1s;
+            }
+
+            @media screen and (max-width: 425px) {
+                &__image {
+                    max-width: 100px;
+                    margin-left: 0;
+                }
             }
 
             &__image:hover {
@@ -42,7 +48,6 @@
 
         &__links {
             min-width: 75%;
-            min-height: 110px;
             @extend %display-flex-align-items-center-justify-content-center;
 
             &__container {
@@ -105,7 +110,6 @@
                             background: rgba(0,0,0,0.5);
                             box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
                             backdrop-filter: blur(20px);
-                            border-radius: 10px;
 
                             .fa-circle-xmark {
                                 color: white;
@@ -161,7 +165,6 @@
         
         &__social {
             min-width: 15%;
-            min-height: 110px;
             @extend %display-flex-align-items-center-justify-content-center;
 
             &__container {
@@ -190,6 +193,58 @@
                 .fa-github {
                     font-size: 30px;
                 }
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            &__social {
+                display: none;
+            }
+        }
+
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+    .nav {
+        min-height: 110px;
+        
+        &__rectangule {
+            min-width: 95%;
+            min-height: 80px;
+
+            &__logo {
+
+                &__image {
+                    max-width: 105px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav {
+        min-height: 110px;
+        
+        &__rectangule {
+            min-width: 94%;
+            min-height: 80px;
+            justify-content: space-between;
+
+            &__logo {
+                margin-left: 2%;
+
+                &__image {
+                    max-width: 105px;
+                }
+            }
+
+            &__links {
+                min-width: 10%;
+                margin-right: 4%;
             }
         }
     }
