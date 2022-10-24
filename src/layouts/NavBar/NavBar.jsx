@@ -1,4 +1,5 @@
-import React from 'react'
+// React
+import { useState } from 'react'
 
 // Images
 import navBarIcon from '@/assets/navBar-icon.png'
@@ -7,6 +8,22 @@ import navBarIcon from '@/assets/navBar-icon.png'
 import './NavBar.scss'
 
 const NavBar = () => {
+  const [displayMenu, setDisplayMenu] = useState(false)
+
+  const styles = {
+    mobileMenu: {
+      display: displayMenu ? 'block' : 'none'
+    }
+  }
+
+  const handleOnClickDisplayMenuTrue = () => {
+    setDisplayMenu(true)
+  }
+
+  const handleOnClickDisplayMenuFalse = () => {
+    setDisplayMenu(false)
+  }
+
   return (
     <section className='nav-section'>
       <nav className='nav'>
@@ -30,6 +47,29 @@ const NavBar = () => {
               <a href='#aboutContact'>
                 <p className='nav__rectangule__links__container__text'> ABOUT | CONTACT </p>
               </a>
+            </div>
+            <div className='nav__rectangule__links__container--mobile'>
+              <i className='fa-solid fa-bars' onClick={handleOnClickDisplayMenuTrue} />
+              <div
+                className='nav__rectangule__links__container--mobile__section'
+                style={styles.mobileMenu}
+              >
+                <div className='nav__rectangule__links__container--mobile__section__text'>
+                  <i className='fa-regular fa-circle-xmark' onClick={handleOnClickDisplayMenuFalse} />
+                  <a href='#home'>
+                    <p className='nav__rectangule__links__container--mobile__section__text__p' onClick={handleOnClickDisplayMenuFalse}> HOME </p>
+                  </a>
+                  <a href='#portfolio'>
+                    <p className='nav__rectangule__links__container--mobile__section__text__p' onClick={handleOnClickDisplayMenuFalse}> PORTFOLIO </p>
+                  </a>
+                  <a href='#skillset'>
+                    <p className='nav__rectangule__links__container--mobile__section__text__p' onClick={handleOnClickDisplayMenuFalse}> SKILLSET </p>
+                  </a>
+                  <a href='#aboutContact'>
+                    <p className='nav__rectangule__links__container--mobile__section__text__p' onClick={handleOnClickDisplayMenuFalse}> ABOUT | CONTACT </p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className='nav__rectangule__social'>

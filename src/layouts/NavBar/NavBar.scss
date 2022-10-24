@@ -22,6 +22,7 @@
         min-height: 110px;
         background-color: white;
         @extend %display-flex;
+        justify-content: space-around;
 
         &__logo {
             min-width: 10%;
@@ -60,10 +61,6 @@
                     color: $Black;
                 }
 
-                a:active {
-                    color: #29496c;
-                }
-
                 &__text {
                     margin: 0;
                     font-family: $ChauPilomene;
@@ -76,6 +73,89 @@
                     transform: scale(1.2);
                     color: #29496c;
                 }
+
+                &--mobile {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                &__container {
+                    display: none;
+
+                    &--mobile {
+                        display: block;
+
+                        .fa-bars {
+                            font-size: 3.3rem;
+                            transition: all 0.5s;
+                        }
+
+                        .fa-bars:hover {
+                            transform: scale(1.2);
+                        }
+
+                        &__section {
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            min-height: 100vh;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,0.5);
+                            box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+                            backdrop-filter: blur(20px);
+                            border-radius: 10px;
+
+                            .fa-circle-xmark {
+                                color: white;
+                                font-size: 4rem;
+                                transition: all 0.4s;
+                            }
+
+                            .fa-circle-xmark:hover {
+                                transform: scale(1.2);
+                            }
+
+                            &__text {
+                                min-width: 100%;
+                                min-height: 100vh;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 30px;
+
+                                a:link {
+                                    text-decoration: none;
+                                }
+                
+                                a:visited {
+                                    color: white;
+                                }
+
+                                &__p {
+                                    margin: 0;
+                                    font-family: $ChauPilomene;
+                                    font-size: 4rem;
+                                    letter-spacing: 1.2px;
+                                    transition: transform 0.4s;
+                                }
+                
+                                &__p:hover {
+                                    transform: scale(1.2);
+                                    color: #93c7ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            &__links {
+                min-width: 50%;
             }
         }
         
