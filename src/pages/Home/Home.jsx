@@ -30,7 +30,7 @@ const Home = () => {
           <div className='home__center__cv'>
             <a href='/cv-english.pdf' target='_blank'>
               <button className='home__center__cv__download'>
-                <i class='fa-solid fa-cloud-arrow-down' />
+                <i className='fa-solid fa-cloud-arrow-down' />
                 <p> DOWNLOAD MY CV </p>
               </button>
             </a>

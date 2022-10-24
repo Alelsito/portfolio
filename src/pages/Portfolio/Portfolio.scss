@@ -1,15 +1,7 @@
 // Styles
 @import '@/styles/styles';
 
-.linkSkillset {
-    position: relative;
-    min-width: 30px;
-    min-height: 10px;
-    bottom: 6rem;
-}
-
 .portfolio {
-    min-width: 100%;
     @extend %display-flex-flex-direction-column;
     align-items: center;
     margin-top: 70px;
@@ -155,5 +147,26 @@
                 @extend %display-flex-flex-direction-column;
             }
         }
+    }
+}
+
+.linkSkillset {
+    position: relative;
+    min-width: 30px;
+    min-height: 10px;
+    bottom: 6rem;
+}
+
+// Media queries
+
+@media screen and (max-width: 1440px) {
+    .linkSkillset {
+        bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .linkSkillset {
+        bottom: 2rem;
     }
 }

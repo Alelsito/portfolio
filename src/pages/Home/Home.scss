@@ -1,15 +1,17 @@
 // Styles
 @import '@/styles/styles';
 
-.linkPortfolio {
-    position: relative;
-    min-height: 10px;
-    min-width: 10px;
-    bottom: 5em;
+// Extend
+%displayNoneWidthMax1024px {
+    @media screen and (max-width: 1024px) {
+        img {
+            display: none;
+        }
+    }
 }
 
 .home {
-    max-width: 100%;
+    min-width: 100%;
     padding-top: 210px;
     @extend %display-flex-align-items-center-justify-content-center;
     margin-bottom: 50px;
@@ -17,7 +19,7 @@
     &__left {
         max-width: 20%;
         @extend %display-flex-align-items-center-justify-content-center;
-
+        
         img {
             max-height: 550px;
             transition: all 1s;
@@ -26,6 +28,9 @@
         img:hover {
             transform: rotate(10deg) scale(1.1);
         }
+
+        @extend %displayNoneWidthMax1024px;
+
     }
 
     &__center {
@@ -126,10 +131,33 @@
             transform: rotate(-10deg) scale(1.1);
         }
 
+        @extend %displayNoneWidthMax1024px;
+
     }
 }
 
 .prueba {
     min-width: 100%;
     min-height: 1000px;
+}
+
+.linkPortfolio {
+    position: relative;
+    min-height: 10px;
+    min-width: 10px;
+    bottom: 5rem;
+}
+
+// Media queries
+
+@media screen and (max-width: 1440px) {
+    .linkPortfolio {
+        bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .linkPortfolio {
+        bottom: 2rem;
+    }
 }

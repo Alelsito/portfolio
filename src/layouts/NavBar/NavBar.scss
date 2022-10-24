@@ -3,8 +3,7 @@
 
 .nav-section {
     min-width: 100%;
-    max-width: 100%;
-    padding: 15px 0 10px 0;
+    padding: 1% 0 1% 0;
     background-color: $Black;
     position: fixed;
     z-index: 3;
@@ -14,7 +13,7 @@
 
 .nav {
     min-width: 95%;
-    min-height: 150px;
+    min-height: 140px;
     border: 3px solid white;
     @extend %display-flex-align-items-center-justify-content-center;
 
@@ -23,17 +22,15 @@
         min-height: 110px;
         background-color: white;
         @extend %display-flex;
-        justify-content: space-between;
 
         &__logo {
             min-width: 10%;
-            max-width: 15%;
             min-height: 110px;
             @extend %display-flex-align-items-center;
 
             &__image {
-                max-width: 130px;
-                margin-left: 20px;
+                max-width: 115px;
+                margin-left: 10%;
                 transition: all 1s;
             }
 
@@ -43,16 +40,17 @@
         }
 
         &__links {
-            min-width: 60%;
+            min-width: 75%;
             min-height: 110px;
             @extend %display-flex-align-items-center-justify-content-center;
 
             &__container {
-                min-width: 75%;
+                min-width: 85%;
                 min-height: 35px;
                 border-bottom: 4px solid $Black;
-                @extend %display-flex-align-items-center;
-                justify-content: space-around;
+                margin-left: 5%;
+                @extend %display-flex-align-items-center-justify-content-center;
+                gap: 7%;
 
                 a:link {
                     text-decoration: none;
@@ -69,7 +67,7 @@
                 &__text {
                     margin: 0;
                     font-family: $ChauPilomene;
-                    font-size: 2rem;
+                    font-size: 1.9rem;
                     letter-spacing: 1.2px;
                     transition: transform 0.4s;
                 }
@@ -82,16 +80,14 @@
         }
         
         &__social {
-            min-width: 10%;
-            max-width: 15%;
+            min-width: 15%;
             min-height: 110px;
             @extend %display-flex-align-items-center-justify-content-center;
 
             &__container {
-                min-width: 160px;
                 min-height: 60px;
                 @extend %display-flex-align-items-center-justify-content-center;
-                gap: 20px;
+                gap: 35%;
 
                 a:link {
                     color: $Black;
